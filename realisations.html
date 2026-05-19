@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mes réalisations professionnelles - BTS SIO SLAM">
+    <title>Réalisations - Portfolio BTS SIO</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">Portfolio</span>
+                <span class="logo-bracket">/&gt;</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="parcours.html" class="nav-link">Parcours</a></li>
+                <li><a href="competences.html" class="nav-link">Compétences</a></li>
+                <li><a href="realisations.html" class="nav-link active">Réalisations</a></li>
+                <li><a href="veille.html" class="nav-link">Veille</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <span class="page-tag">// Mes projets</span>
+                <h1 class="page-title">Réalisations professionnelles</h1>
+                <p class="page-description">
+                    Découvrez mes projets réalisés en cours de formation, en stage et en autonomie.
+                    Chaque réalisation illustre les compétences du Bloc 1.
+                </p>
+            </div>
+        </div>
+        <div class="header-decoration"></div>
+    </section>
+
+    <!-- Filtres -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tous les projets</button>
+                <button class="filter-btn" data-filter="stage">Stage</button>
+                <button class="filter-btn" data-filter="ap">AP / Formation</button>
+                <button class="filter-btn" data-filter="perso">Projets personnels</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Réalisations Grid -->
+    <section class="realisations-grid-section">
+        <div class="container">
+            <div class="realisations-grid">
+                
+                <!-- ⚠️ À MODIFIER : Projet 1 -->
+                <div class="project-card" data-category="ap">
+                    <div class="project-image">
+                        <!-- ⚠️ Ajoute une image : images/projets/projet1.jpg -->
+                        <img src="images/projets/LogoAcc.jpg" alt="Application GSB" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                        <div class="project-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <rect x="10" y="10" width="60" height="60" rx="4" stroke="currentColor" stroke-width="2"/>
+                                <path d="M30 35h20M30 45h20M30 55h15" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="projets/projet-acc.html" class="overlay-btn">Voir les détails</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag-category">AP</span>
+                            <span class="tag-year">2024-2025</span>
+                        </div>
+                        <h3>Aux Claviers Citoyens (ACC)</h3>
+                        <p class="project-description">
+                            Développement back-end de l'API de gestion e-sport. Conception des modules
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-item">API REST</span>
+                            <span class="tech-item">JSON</span>
+                            <span class="tech-item">POSTMAN</span>
+                            <span class="tech-item">PHP</span>
+                        </div>
+                        <div class="project-competences">
+                            <span class="comp-item">B1.2</span>
+                            <span class="comp-item">B1.4</span>
+                            <span class="comp-item">B1.5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ⚠️ À MODIFIER : Projet 2 -->
+                <div class="project-card" data-category="stage">
+                    <div class="project-image">
+                        <img src="images/projets/LogoM2L.jpg" alt="Site web entreprise" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                        <div class="project-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <rect x="10" y="10" width="60" height="60" rx="4" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="40" cy="40" r="15" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="projets/projet-m2l.html" class="overlay-btn">Voir les détails</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag-category stage">Projet École (AP 3.1)</span>
+                            <span class="tag-year">2025</span>
+                        </div>
+                        <h3>Site Dynamique M2L</h3>
+                        <p class="project-description">
+                            Évolution du site de la Maison des Ligues site statique en site dynamique. Modélisation de base de données.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-item">PHP/MySQL</span>
+                            <span class="tech-item">CSS</span>
+                            <span class="tech-item">JS</span>
+                            <span class="tech-item">Modélisation BDD</span>
+                        </div>
+                        <div class="project-competences">
+                            <span class="comp-item">B1.3</span>
+                            <span class="comp-item">B1.4</span>
+                            <span class="comp-item">B1.5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ⚠️ À MODIFIER : Projet 3 -->
+                <div class="project-card" data-category="stage">
+                    <div class="project-image">
+                        <img src="images/projets/Apside-logo.png" alt="Application C# WPF Apside" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                        <div class="project-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <rect x="15" y="20" width="50" height="40" rx="2" stroke="currentColor" stroke-width="2"/>
+                                <path d="M25 30h30M25 40h30M25 50h20" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="projets/projet-stage1.html" class="overlay-btn">Voir les détails</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag-category stage">Stage</span>
+                            <span class="tag-year">2024</span>
+                        </div>
+                        <h3>Application Client Lourd (Naval Group)</h3>
+                        <p class="project-description">
+                            Évolution d'interfaces en WPF/XAML et de la logique métier en C# sous architecture MVVM. Implémentation de tests unitaires via un composant simulé (FakeBattery).
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-item">C#</span>
+                            <span class="tech-item">WPF / XAML</span>
+                            <span class="tech-item">Git</span>
+                            <span class="tech-item">JSON / Excel</span>
+                        </div>
+                        <div class="project-competences">
+                            <span class="comp-item">B1.1</span>
+                            <span class="comp-item">B1.4</span>
+                            <span class="comp-item">B2.1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="stage">
+                    <div class="project-image">
+                        <img src="images/projets/TeqoyaLogo.jpg" alt="Banc de test Teqoya" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                        <div class="project-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <rect x="25" y="10" width="30" height="60" rx="4" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="40" cy="15" r="1.5" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="projets/projet-stage2.html" class="overlay-btn">Voir les détails</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag-category stage">Stage</span>
+                            <span class="tag-year">2025</span>
+                        </div>
+                        <h3>Optimisation du Logiciel de Banc de Test</h3>
+                        <p class="project-description">
+                            Développement d'un site local en PHP/SQL pour centraliser des résultats, intégration de capteurs physiques en C++ (Arduino) et rédaction d'un guide technique d'exploitation.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-item">PHP / SQL</span>
+                            <span class="tech-item">C++ (Arduino)</span>
+                            <span class="tech-item">Embarqué</span>
+                            <span class="tech-item">Documentation</span>
+                        </div>
+                        <div class="project-competences">
+                            <span class="comp-item">B1.3</span>
+                            <span class="comp-item">B1.5</span>
+                            <span class="comp-item">B2.3</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets détaillés (Modals) -->
+    <section class="project-details">
+        <!-- ⚠️ À MODIFIER : Détail Projet 1 -->
+        <div id="projet1" class="project-modal">
+            <div class="modal-content">
+                <a href="#" class="modal-close">&times;</a>
+                
+                <div class="modal-header">
+                    <h2>Application GSB</h2>
+                    <div class="modal-tags">
+                        <span class="tag-category">AP</span>
+                        <span class="tag-year">2024-2025</span>
+                    </div>
+                </div>
+
+                <div class="modal-body">
+                    <div class="modal-section">
+                        <h3>📋 Contexte</h3>
+                        <p>
+                            Projet de 2ème année de BTS SIO réalisé dans le cadre des Ateliers de 
+                            Professionnalisation. L'objectif était de développer une application de 
+                            gestion des frais pour l'entreprise GSB (Galaxy Swiss Bourdin).
+                        </p>
+                    </div>
+
+                    <div class="modal-section">
+                        <h3>🎯 Objectifs</h3>
+                        <ul>
+                            <li>Permettre aux visiteurs médicaux de saisir leurs frais</li>
+                            <li>Automatiser la validation et le remboursement des frais</li>
+                            <li>Gérer les droits d'accès (visiteurs, comptables, administrateurs)</li>
+                            <li>Générer des rapports et statistiques</li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-section">
+                        <h3>⚙️ Technologies utilisées</h3>
+                        <div class="tech-stack-detail">
+                            <div class="tech-detail-item">
+                                <strong>Backend:</strong> PHP 8, Symfony 6
+                            </div>
+                            <div class="tech-detail-item">
+                                <strong>Frontend:</strong> Twig, Bootstrap 5
+                            </div>
+                            <div class="tech-detail-item">
+                                <strong>Base de données:</strong> MySQL 8
+                            </div>
+                            <div class="tech-detail-item">
+                                <strong>Outils:</strong> Git, Composer, XAMPP
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-section">
+                        <h3>💡 Réalisations techniques</h3>
+                        <ul>
+                            <li>Architecture MVC avec Symfony</li>
+                            <li>Système d'authentification sécurisé</li>
+                            <li>CRUD complet pour la gestion des frais</li>
+                            <li>Upload et gestion de fichiers justificatifs</li>
+                            <li>Génération de PDF pour les rapports</li>
+                            <li>Tests unitaires avec PHPUnit</li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-section">
+                        <h3>🎓 Compétences mobilisées</h3>
+                        <div class="competences-detail">
+                            <div class="comp-detail-item">
+                                <strong>B1.2</strong> - Répondre aux incidents et demandes
+                            </div>
+                            <div class="comp-detail-item">
+                                <strong>B1.4</strong> - Travailler en mode projet (méthode Agile)
+                            </div>
+                            <div class="comp-detail-item">
+                                <strong>B1.5</strong> - Mise à disposition (tests, déploiement, documentation)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-section">
+                        <h3>📊 Résultats</h3>
+                        <p>
+                            Application fonctionnelle déployée et testée. Gain de temps de 60% 
+                            pour le traitement des frais. Documentation complète fournie.
+                        </p>
+                    </div>
+
+                    <div class="modal-links">
+                        <a href="https://github.com/ton-username/gsb" target="_blank" class="modal-link">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10 0C4.477 0 0 4.477 0 10c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0110 4.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C17.137 18.165 20 14.418 20 10c0-5.523-4.477-10-10-10z"/>
+                            </svg>
+                            Voir sur GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ⚠️ Ajoute les détails des autres projets de la même manière -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>Portfolio BTS SIO</h4>
+                    <p>Mattéo Tauzin - Étudiant en développement</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="parcours.html">Parcours</a></li>
+                        <li><a href="competences.html">Compétences</a></li>
+                        <li><a href="realisations.html">Réalisations</a></li>
+                        <li><a href="veille.html">Veille</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:matteo.tauzin@gmail.com">Email</a></li>
+                        <li><a href="https://www.linkedin.com/in/matteo-tauzin-b878aa40b" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/matteotauzin-ship-it" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 - Portfolio BTS SIO SLAM</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <script src="js/realisations.js"></script>
+</body>
+</html>
