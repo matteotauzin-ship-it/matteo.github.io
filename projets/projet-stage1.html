@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dossier technique : Stage 1ère Année - Mattéo Tauzin">
+    <title>Stage Apside - Portfolio BTS SIO</title>
+    
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">Portfolio</span>
+                <span class="logo-bracket"/>/&gt;</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Accueil</a></li>
+                <li><a href="../parcours.html" class="nav-link">Parcours</a></li>
+                <li><a href="../competences.html" class="nav-link">Compétences</a></li>
+                <li><a href="../realisations.html" class="nav-link active">Réalisations</a></li>
+                <li><a href="../veille.html" class="nav-link">Veille</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container" style="margin-top: 120px; padding-bottom: 60px;">
+        <header class="project-header">
+            <a href="../realisations.html" class="back-link">← Retour aux réalisations</a>
+            <h1>Stage de 1ère Année - APSIDE (Bordeaux)</h1>
+            <div class="project-tags">
+                <span class="tag">C# / .NET</span>
+                <span class="tag">WPF / XAML</span>
+                <span class="tag">Architecture MVVM</span>
+                <span class="tag">Git</span>
+            </div>
+        </header>
+
+        <img src="../images/projets/Apside-logo.png" width="200" style="justify-content: center;" alt="Interface opérationnelle en localhost" onerror="this.style.borderColor='var(--gray-700)'">
+
+        <section class="project-intro" style="margin-bottom: 40px;">
+            <h2>Contexte et Objectifs du Stage</h2>
+            <p>
+                Au sein de l'agence <strong>Apside Bordeaux</strong>, spécialisée dans l'ingénierie logicielle et de conseil en systèmes d'information, j'ai intégré une équipe de développement travaillant sur des projets clients exigeants. Ma mission s'est concentrée sur l'analyse, l'intégration de nouvelles fonctionnalités applicatives et le traitement de correctifs complexes en exploitant le langage <strong>C# et l'architecture MVVM (Model-View-ViewModel)</strong> sous environnement WPF.
+            </p>
+        </section>
+
+        <section class="competences-mapping">
+            <h2 style="margin-bottom: 20px;">Analyse réflexive des compétences mobilisées</h2>
+            <p style="color: var(--gray-400); margin-bottom: 30px; font-style: italic;">
+                Clique sur une compétence pour déplier l'analyse et afficher la preuve technique associée.
+            </p>
+            
+            <div class="mapping-container">
+
+                <div class="mapping-row">
+                    <div class="visible-part">
+                        <div class="comp-side">
+                            <div class="comp-badge">B1.1</div>
+                            <h3>Gérer le patrimoine informatique</h3>
+                        </div>
+                        <div class="arrow-icon">▼</div>
+                        <div class="preview-text">Gérer des sauvegardes</div>
+                    </div>
+                    
+                    <div class="details-content">
+                        <div class="details-grid full-width-layout">
+                            <div class="details-text">
+                                <h4>Application concrète :</h4>
+                                <p>
+                                    Dans le cadre de l'évolution de la solution logicielle du soft pour Naval Group, J'ai veillé à respecter la gestion des sauvegarde du soft. 
+                                </p>
+                                <p>
+                                    Afin de ne pas casser le patrimoine logiciel, j'ai suivi les procédures de sauvegarde et de versioning, en m'assurant que chaque modification était correctement documentée et intégrée dans le système de contrôle de version Git. Avec ma propre branche et une validation par le client pour l'integrer dans la version finale du soft.
+                                </p>
+                            </div>
+                            <div class="details-image">
+                                <img src="../images/projets/PreuveApsideValidationModif.png" alt="Arborescence des configurations de données" onerror="this.style.borderColor='var(--gray-700)'">
+                                <span>L’analyse faite pour le client afin qu'il puisse valider les modifications.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mapping-row">
+                    <div class="visible-part">
+                        <div class="comp-side">
+                            <div class="comp-badge">B1.2</div>
+                            <h3>Répondre aux incidents et aux demandes d'assistance</h3>
+                        </div>
+                        <div class="arrow-icon">▼</div>
+                        <div class="preview-text">Diagnostic et correction d'un bug graphique d'interface client en haute résolution 4K.</div>
+                    </div>
+                    
+                    <div class="details-content">
+                        <div class="details-grid full-width-layout">
+                            <div class="details-text">
+                                <h4>Application concrète :</h4>
+                                <p>
+                                    J'ai été affecté à la résolution d'une anomalie bloquante signalée par un client final sur une application de bureau. Lors de l'utilisation de moniteurs très haute définition (résolution 4K), la <em>Taskbar</em> de l'application se retrouvait tronquée et illisible.
+                                </p>
+                                <p>
+                                    Pour traiter cet incident, j'ai configuré un environnement virtuel d'émulation graphique sous <strong>VMware</strong> pour reproduire précisément le comportement de l'affichage en 4K.
+                                </p>
+                            </div>
+                            <div class="details-image">
+                                <img src="../images/projets/CaptureVmWare.png" alt="Correction de bug graphique WPF" onerror="this.style.borderColor='var(--gray-700)'">
+                                <span>Outil utilisé pour l'émulation graphique</span>
+                            </div>
+                            <div class="details-image">
+                                <img src="../images/projets/TaskbarTronc.png" alt="Correction de bug graphique WPF" onerror="this.style.borderColor='var(--gray-700)'">
+                                <span>TaskBar tronquée lors d'une résolution 4K</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>Portfolio BTS SIO</h4>
+                    <p>Mattéo Tauzin - Étudiant en développement</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="parcours.html">Parcours</a></li>
+                        <li><a href="competences.html">Compétences</a></li>
+                        <li><a href="realisations.html">Réalisations</a></li>
+                        <li><a href="veille.html">Veille</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:matteo.tauzin@gmail.com">Email</a></li>
+                        <li><a href="https://www.linkedin.com/in/matteo-tauzin-b878aa40b" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/matteotauzin-ship-it" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 - Portfolio BTS SIO SLAM</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script>
+        document.querySelectorAll('.mapping-row').forEach(row => {
+            row.addEventListener('click', (e) => {
+                if(e.target.tagName === 'IMG') return;
+                row.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
